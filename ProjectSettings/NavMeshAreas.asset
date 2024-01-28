@@ -11,11 +11,11 @@ NavMeshProjectSettings:
     cost: 1
   - name: Jump
     cost: 2
-  - name: area1
-    cost: 1
-  - name: area2
+  - name: Floor
     cost: 2
-  - name: area3
+  - name: ShortCut
+    cost: 1
+  - name: Wall
     cost: 3
   - name: 
     cost: 1
@@ -69,7 +69,7 @@ NavMeshProjectSettings:
     cost: 1
   - name: 
     cost: 1
-  m_LastAgentTypeID: 1479372276
+  m_LastAgentTypeID: 287145453
   m_Settings:
   - serializedVersion: 3
     agentTypeID: 0
@@ -90,7 +90,7 @@ NavMeshProjectSettings:
     debug:
       m_Flags: 0
   - serializedVersion: 3
-    agentTypeID: -334000983
+    agentTypeID: -1923039037
     agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
@@ -108,9 +108,9 @@ NavMeshProjectSettings:
     debug:
       m_Flags: 0
   - serializedVersion: 3
-    agentTypeID: 1479372276
+    agentTypeID: 287145453
     agentRadius: 0.5
-    agentHeight: 2
+    agentHeight: 1
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
@@ -127,5 +127,5 @@ NavMeshProjectSettings:
       m_Flags: 0
   m_SettingNames:
   - Humanoid
-  - 'enemy '
-  - npc
+  - Tall
+  - Short
