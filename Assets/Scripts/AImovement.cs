@@ -7,6 +7,9 @@ public class AImovement : MonoBehaviour
 {
     private GameObject endPoint;
     private NavMeshAgent agent;
+    [SerializeField]
+    private Animator animator;
+    private const string IsWalking = "IsMoving";
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +20,8 @@ public class AImovement : MonoBehaviour
         agent.SetDestination(endPoint.transform.position);
 
     }
-
-
+    private void Update()
+    {
+        animator.SetBool(IsWalking, agent.velocity.magnitude > 0.01f);
+    }
 }
